@@ -1,4 +1,4 @@
-# README for Video Processing Application Using Convolutions
+# Video Processing Application Using Convolutions
 
 ## Project Overview
 
@@ -72,6 +72,19 @@ Convolution involves overlapping two matrices or vectors (matrix A and B) and co
 - Speedup requirements and benchmarks are provided.
 - Performance is measured based on execution time and speedup over various test scenarios.
 
-Speedup requirements:
-<img width="820" alt="Screenshot 2024-01-02 at 7 30 00 AM" src="https://github.com/JavaJugglers/Advanced-Digital-Signal-Processing/assets/80533395/07acc0ca-4940-4727-81f5-fbf589244265">
+## Speedup Requirements
+
+The following table outlines the speedup requirements for various benchmarks:
+
+| Name        | Folder Name             | Type      | Speedup |
+|-------------|-------------------------|-----------|---------|
+| Random      | test_ag_random          | Optimized | 7.83x   |
+|             |                         | Open MPI  | 5.19x   |
+| Increasing  | test_ag_increasing      | Optimized | 9.03x   |
+|             |                         | Open MPI  | 4.01x   |
+| Decreasing  | test_ag_decreasing      | Optimized | 8.69x   |
+|             |                         | Open MPI  | 4.62x   |
+| Big and Small| test_ag_big_and_small  | Open MPI  | 3.07x   |
+
+These benchmarks are critical in evaluating the performance enhancements achieved through optimizations in convolution operations.
 
